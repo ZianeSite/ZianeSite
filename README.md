@@ -1,4 +1,4 @@
-![Banner](\My official logo.jpg)
+![Banner](My official logo.jpg)
 
 # Hi, I'm Ziane - Site 👋
 
