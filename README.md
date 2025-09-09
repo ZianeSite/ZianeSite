@@ -1,4 +1,4 @@
-![Banner](assets/My official logo.jpg)
+![Banner](assets/My%20official%20logo.jpg)
 
 # Hi, I'm Ziane - Site 👋
 
