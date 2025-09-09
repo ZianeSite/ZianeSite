@@ -27,8 +27,8 @@ I am an Oracle Certified Associate (Java SE 8 Programmer, IZO-808) and hold cert
 ## 📈 GitHub Stats
 
 ![Ziane's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZianeSite&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ZianeSite&layout=compact&theme=radical)(https://github.com/anuraghazra/github-readme-stats)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ZianeSite&layout=compact&theme=radical)
 ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=ZianeSite&theme=radical)
 --
 
-> “Passionate about building intuitive digital experiences.”
+> “Life isn’t meant to run in grayscale — it’s a full-colour program. Every day is a new line of code, a chance to debug fear, commit to passion, and push vibrant possibilities to your personal repository.”
