@@ -12,6 +12,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -248,7 +249,6 @@ span{
     81%, 100% {
         content: "Problem Solver";
     }
-
 }
 
 @media (max-width: 1000px){
@@ -297,4 +297,25 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
+}
+
+/* --- Extra sections styling for scroll --- */
+.skills, .education, .projects, .experience, .contact {
+    background: #111;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 30px #1a1a1a;
+}
+.section-title {
+    font-size: 3rem;
+    color: #FFDAB9;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.section-content {
+    font-size: 1.7rem;
+    color: #fff;
+    margin: 0 auto 2rem auto;
+    max-width: 900px;
+    text-align: center;
 }
