@@ -71,8 +71,8 @@ nav a.active{
         top: 0;
         right: 0;
         width: 40%;
-        border-left: 3px solid #b74b4b;
-        border-bottom: 3px solid #b74b4b;
+        border-left: 3px solid #FFDAB9;
+        border-bottom: 3px solid #FFDAB9;
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
         background-color: #161616;
@@ -93,7 +93,7 @@ nav a.active{
     nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #b74b4b;
+        border-bottom: 0.5rem solid #FFDAB9;
     }
 }
 
@@ -111,13 +111,15 @@ section{
 }
 
 .home .home-content h1{
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.3;
+    word-break: break-word;
+    text-align: left;
 }
 
 span{
-    color: #b74b4b;
+    color: #FFDAB9;
 }
 
 .home-content h3{
@@ -225,7 +227,6 @@ span{
 }
 
 @keyframes words{
-    @keyframes words {
     0%, 20% {
         content: "Software Developer";
     }
