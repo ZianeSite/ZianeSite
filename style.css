@@ -39,7 +39,7 @@ header{
 
 .logo{
     font-size: 3rem;
-    color: #b74b4b;
+    color: #FFDAB9;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -60,8 +60,8 @@ nav a{
 
 nav a:hover,
 nav a.active{
-    color: #b74b4b;
-    border-bottom: 3px solid #b74b4b;
+    color: #FFDAB9;
+    border-bottom: 3px solid #FFDAB9;
 }
 
 @media(max-width:995px){
@@ -155,19 +155,19 @@ span{
     width: 4rem;
     height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid #b74b4b;
+    border: 0.2rem solid #FFDAB9;
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: #b74b4b;
+    color: #FFDAB9;
 }
 
 .social-icons a:hover{
     color: black;
     transform: scale(1.3) translateY(-5px);
-    background-color: #b74b4b;
-    box-shadow: 0  0 25px #b74b4b;
+    background-color: #FFDAB9;
+    box-shadow: 0 0 25px #FFDAB9;
 }
 
 .btn{
@@ -176,19 +176,19 @@ span{
     background-color: black;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: #b74b4b;
+    color: #FFDAB9;
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid #b74b4b;
+    border: 2px solid #FFDAB9;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .btn:hover{
     transform: scale3d(1.03);
-    background-color: #b74b4b;
+    background-color: #FFDAB9;
     color: black;
-    box-shadow: 0 0 25px #b74b4b;
+    box-shadow: 0 0 25px #FFDAB9;
 }
 
 .typing-text{
@@ -203,7 +203,7 @@ span{
 
 .typing-text span::before{
     content: "Software Developer";
-    color: #b74b4b;
+    color: #FFDAB9;
     animation: words 10s infinite;
 }
 
@@ -220,7 +220,7 @@ span{
 
 @keyframes cursor{
     to{
-        border-left: 3px solid #b74b4b;
+        border-left: 3px solid #FFDAB9;
     }
 }
 
