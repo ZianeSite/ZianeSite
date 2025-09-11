@@ -37,6 +37,8 @@
 - NetBeans
 - Visual Basic
 
+---
+
 ### 🛠️ Experience
 
 **Software Development Trainee – Java Program**  
@@ -70,5 +72,6 @@ _01 June 2022_
 ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=ZianeSite&theme=radical)
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ZianeSite&theme=radical"/>
 
+---
 
 > “Life isn’t meant to run in grayscale — it’s a full-colour program. Every day is a new line of code, a chance to debug fear, commit to passion, and push vibrant possibilities to your personal repository.”
