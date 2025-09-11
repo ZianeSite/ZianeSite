@@ -36,7 +36,7 @@
     </div>
     <div class="home-content">
       <h1>Hi, It's <span>Lebohang Precious Ziane</span></h1>
-      <h3 class="typing-text">I'm a <span></span></h3>
+      <h3 class="typing-text">I'm a <span id="typed-text"></span></h3>
       <p>
         With a Diploma in Information & Communication Technology – Application Development (2024) from Sol Plaatje University. 
         I am an Oracle Certified Associate (Java SE 8 Programmer, IZO-808) and hold certifications in IBM AI Fundamentals, 
@@ -128,6 +128,42 @@
   <!-- 3D Robot Cursor Follower -->
   <div id="robot-cursor"></div>
   <script>
+  // Typing text animation
+const words = ["Software Developer", "Web Designer", "UI/UX Enthusiast", "Java Programmer", "Problem Solver"];
+const typedText = document.getElementById("typed-text");
+
+let wordIndex = 0;
+let charIndex = 0;
+let currentWord = "";
+let isDeleting = false;
+let typingSpeed = 150;
+
+function type() {
+  currentWord = words[wordIndex];
+  
+  if (!isDeleting) {
+    typedText.textContent = currentWord.slice(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === currentWord.length) {
+      isDeleting = true;
+      setTimeout(type, 1500); // Pause at full word
+      return;
+    }
+  } else {
+    typedText.textContent = currentWord.slice(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+    }
+  }
+  setTimeout(type, isDeleting ? typingSpeed / 2 : typingSpeed);
+}
+
+// Start the typing animation
+type();
+
+    
     // Robot cursor div setup
     const robotDiv = document.getElementById('robot-cursor');
     robotDiv.style.position = 'fixed';
