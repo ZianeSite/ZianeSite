@@ -1,338 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="https://github.com/ZianeSite" class="logo">ZianeSite</a>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section id="home" class="home">
-       <div class="home-img">
-            <img src="assets/9c6786b1-4000-4d9a-b3b1-1537378ec226.png" alt="ZianeSite Logo">
-        </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Lebohang Precious Ziane</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>With a Diploma in Information & Communication Technology – Application Development (2024) from Sol Plaatje University. I am an Oracle Certified Associate (Java SE 8 Programmer, IZO-808) and hold certifications in IBM AI Fundamentals, Professional Skill, and Certiport IT Specialist. A UI/UX Enthusiast and Java Programmer</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/lebohang-ziane-3805332b1"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/ZianeSite" ><i class="fa-brands fa-github"></i></a>
-                <a href="https://wa.me/27678177381"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-            <a href="mailto:lebohangziane@gmail.com" class="btn">Send Email</a>
-            <a href="resume.pdf" class="btn" download>Download CV</a>
-        </div>
-    </section>
-    <section id="skills" class="skills">
+  <header>
+    <a href="https://github.com/ZianeSite" class="logo">ZianeSite</a>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#skills-projects">Skills & Projects</a>
+      <a href="#education-certifications">Education & Certifications</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-img">
+      <img src="assets/9c6786b1-4000-4d9a-b3b1-1537378ec226.png" alt="ZianeSite Logo" />
+    </div>
+    <div class="home-content">
+      <h1>Hi, It's <span>Lebohang Precious Ziane</span></h1>
+      <h3 class="typing-text">I'm a <span></span></h3>
+      <p>
+        With a Diploma in Information & Communication Technology – Application Development (2024) from Sol Plaatje University. I am an Oracle Certified Associate (Java SE 8 Programmer, IZO-808) and hold certifications in IBM AI Fundamentals, Professional Skill, and Certiport IT Specialist. A UI/UX Enthusiast and Java Programmer
+      </p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/lebohang-ziane-3805332b1"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/ZianeSite"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/27678177381"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <a href="mailto:lebohangziane@gmail.com" class="btn">Send Email</a>
+      <a href="resume.pdf" class="btn" download>Download CV</a>
+    </div>
+  </section>
+
+  <!-- Skills & Projects Combined -->
+  <section id="skills-projects" class="skills-projects">
+    <!-- JS will inject Skills + Projects here -->
+  </section>
+
+  <!-- Education & Certifications Combined -->
+  <section id="education-certifications" class="education-certifications">
+    <!-- JS will inject Education + Certifications here -->
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="section-content"></div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="section-content">
+      <p>Feel free to reach out!</p>
+      <p>Email: <a href="mailto:lebohangziane@gmail.com" style="color:#FFDAB9;">lebohangziane@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/lebohang-ziane-3805332b1" style="color:#FFDAB9;">Lebohang Ziane</a></p>
+      <p>WhatsApp: <a href="https://wa.me/27678177381" style="color:#FFDAB9;">+27 67 817 7381</a></p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    // --- Data (same as yours, shortened for clarity here) ---
+    const skills = ["Java", "JavaScript", "HTML", "CSS", "Visual Basic", "Python", "SQL", "Git"];
+    const education = [{ Qualification: "Diploma in ICT", institution: "Sol Plaatje University", year: "2021 - 2023", description: "Specialized in Software Development" }];
+    const certifications = [{ title: "Java SE 8 Programmer", issuer: "Oracle", year: "2025", description: "1Z0-808 Certification" }];
+    const experience = [{ title: "Software Development Trainee", company: "Afrika Tikkun", period: "May 2025 - Present", description: ["Java OOP, console/GUI apps, GitHub collaboration, debugging & testing"] }];
+    const projects = [{ title: "Cosmic Task Manager", description: "A space-themed productivity app", tech: ["React", "TypeScript"], status: "Live" }];
+
+    // --- Render Functions ---
+    function renderSkills(skills) {
+      return `
         <h2 class="section-title">Skills</h2>
-        <div class="section-content">
-            <ul style="list-style:none; padding:0;">
-                <li>Java (Oracle Certified Associate)</li>
-                <li>Web Development: HTML, CSS, JavaScript</li>
-                <li>UI/UX Design (Figma, Adobe XD)</li>
-                <li>Python, SQL</li>
-                <li>Artificial Intelligence Fundamentals (IBM Certified)</li>
-                <li>IT Support & Problem Solving</li>
-                <li>Version Control: Git & GitHub</li>
-                <li>Professional Skills & Communication</li>
-            </ul>
+        <div class="section-content" style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
+          ${skills.map(skill => `<span class="btn" style="background:#222; color:#FFDAB9; border-radius:2rem; margin:5px; font-size:1.2rem; border:1px solid #FFDAB9;">${skill}</span>`).join("")}
         </div>
-    </section>
-    <section id="education" class="education">
+      `;
+    }
+
+    function renderProjects(projects) {
+      return `
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-content" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;">
+          ${projects.map(project => `
+            <div style="background:#191919;padding:1rem 2rem;border-radius:1rem;box-shadow:0 2px 12px #0003;">
+              <div style="font-size:1.1rem;color:#FFDAB9;font-weight:600;">${project.title} <span style="float:right;font-size:0.85em;color:#FFDAB9;">${project.status}</span></div>
+              <div style="color:#bbb;margin-bottom:0.5em;">${project.description}</div>
+              <div style="font-size:1rem;color:#FFDAB9;">${project.tech.join(", ")}</div>
+            </div>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    function renderEducation(education) {
+      return `
         <h2 class="section-title">Education</h2>
         <div class="section-content">
-            <strong>Sol Plaatje University</strong><br>
-            Diploma in Information & Communication Technology – Application Development (2024)
-            <br><br>
-            <strong>Certifications:</strong><br>
-            Oracle Certified Associate (Java SE 8 Programmer, IZO-808)<br>
-            IBM AI Fundamentals<br>
-            Certiport IT Specialist<br>
-            IBM Professional Skills
+          ${education.map(edu => `
+            <div style="background:#191919;padding:1rem 2rem;margin:1rem auto;max-width:500px;border-radius:1rem;box-shadow:0 2px 12px #0003;">
+              <div style="font-size:1.2rem;color:#FFDAB9;font-weight:600;">${edu.Qualification} <span style="float:right;color:#fff;font-size:1rem;font-weight:400;">${edu.year}</span></div>
+              <div style="color:#fff;font-weight:400;">${edu.institution}</div>
+              <div style="color:#bbb;">${edu.description}</div>
+            </div>
+          `).join("")}
         </div>
-    </section>
-    <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="section-content">
-            <ul style="list-style:none; padding:0;">
-                <li>
-                    <strong>Portfolio Website (This Site)</strong> – Personal branding and portfolio.
-                </li>
-                <li>
-                    <strong>Library Management System</strong> – Java-based desktop app for library operations.
-                </li>
-                <li>
-                    <strong>Chatbot Assistant</strong> – AI-powered assistant built with Python.
-                </li>
-                <li>
-                    <strong>UI/UX Design Portfolio</strong> – Collection of web and mobile app prototypes (Figma).
-                </li>
-            </ul>
+      `;
+    }
+
+    function renderCertifications(certifications) {
+      return `
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-content" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;">
+          ${certifications.map(cert => `
+            <div style="background:#191919;padding:1rem 2rem;border-radius:1rem;box-shadow:0 2px 12px #0003;">
+              <div style="font-size:1.1rem;color:#FFDAB9;font-weight:600;">${cert.title} <span style="float:right;color:#fff;font-size:1rem;font-weight:400;">${cert.year}</span></div>
+              <div style="color:#fff;font-weight:400;">${cert.issuer}</div>
+              <div style="color:#bbb;">${cert.description}</div>
+            </div>
+          `).join("")}
         </div>
-    </section>
-    <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="section-content">
-            <strong>Freelance Developer & Designer</strong> (2022 – Present)<br>
-            - Built custom web solutions for small businesses.<br>
-            - Designed UI/UX for multiple clients.<br>
-            - Provided IT support and Java tutoring.<br>
-            <br>
-            <strong>Intern – IT Support</strong> (2023)<br>
-            - IT troubleshooting and end-user support.<br>
-            - Assisted in training sessions for staff.
-        </div>
-    </section>
-    <section id="contact" class="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="section-content">
-            <p>Feel free to reach out!</p>
-            <p>Email: <a href="mailto:lebohangziane@gmail.com" style="color:#FFDAB9;">lebohangziane@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/lebohang-ziane-3805332b1" style="color:#FFDAB9;">Lebohang Ziane</a></p>
-            <p>WhatsApp: <a href="https://wa.me/27678177381" style="color:#FFDAB9;">+27 67 817 7381</a></p>
-        </div>
-    </section>
+      `;
+    }
 
-    <!-- In your index.html, before </body>: -->
-
-<script>
-  // --- Your Data ---
-  const skills = ["Java", "JavaScript", "HTML", "CSS", "Visual Basic", "Python", "SQL", "Git"];
-
-  const education = [
-    {
-      Qualification: "Diploma in ICT in Application Development",
-      institution: "Sol Plaatje University",
-      year: "2021 - 2023",
-      description: "Specialized in Software Development",
-    },
-    {
-      Qualification: "Matric",
-      institution: "Mahareng Secondary School",
-      year: "2014 - 2018",
-      description: "Mathematics and Physical Sciences",
-    },
-  ];
-
-  const certifications = [
-    {
-      title: "Java SE 8 Programmer",
-      issuer: "Oracle",
-      year: "2025",
-      description: "1Z0-808 Certification",
-    },
-    {
-      title: "Information Technology Specialist",
-      issuer: "Certiport",
-      year: "2025",
-      description: "Professional Skills Certification",
-    },
-    {
-      title: "AI Fundamentals",
-      issuer: "IBM",
-      year: "2025",
-      description: "Artificial Intelligence Professional Skills",
-    },
-  ];
-
-  const experience = [
-    {
-      title: "Software Development Trainee - Java Program",
-      company: "Afrika Tikkun",
-      period: "May 2025 - Present",
-      description: [
-        "Gained hands-on experience in Java programming (OOP, data structures, algorithms, exception handling)",
-        "Developed and tested console and GUI-based applications using Java",
-        "Collaborated in team projects, using Git/GitHub for version control",
-        "Practiced debugging, testing, and documentation to ensure code quality",
-      ],
-    },
-  ];
-
-  const projects = [
-    {
-      title: "Cosmic Task Manager",
-      description: "A space-themed productivity app with stellar animations",
-      tech: ["React", "TypeScript", "Framer Motion"],
-      status: "Live",
-    },
-    {
-      title: "Neural Network Visualizer",
-      description: "Interactive tool for understanding AI architectures",
-      tech: ["Python", "TensorFlow", "D3.js"],
-      status: "In Progress",
-    },
-    {
-      title: "Quantum Code Editor",
-      description: "Next-gen code editor with AI-powered suggestions",
-      tech: ["Electron", "Monaco", "OpenAI API"],
-      status: "Planning",
-    },
-  ];
-
-  // --- Helper Functions ---
-
-  function renderSkills(skills) {
-    return `
-      <h2 class="section-title">Skills</h2>
-      <div class="section-content" style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
-        ${skills.map(skill => `<span class="btn" style="background:#222; color:#FFDAB9; border-radius:2rem; margin:5px; font-size:1.5rem; border:1px solid #FFDAB9;">${skill}</span>`).join('')}
-      </div>
-    `;
-  }
-
-  function renderEducation(education) {
-    return `
-      <h2 class="section-title">Education</h2>
-      <div class="section-content">
-        ${education.map(edu => `
-          <div style="background:#191919;padding:1rem 2rem;margin:1rem auto;max-width:500px;border-radius:1rem;box-shadow:0 2px 12px #0003;">
-            <div style="font-size:1.2rem;color:#FFDAB9;font-weight:600;">${edu.Qualification} <span style="float:right;color:#fff;font-size:1rem;font-weight:400;">${edu.year}</span></div>
-            <div style="color:#fff;font-weight:400;">${edu.institution}</div>
-            <div style="color:#bbb;">${edu.description}</div>
-          </div>
-        `).join('')}
-      </div>
-    `;
-  }
-
-  function renderCertifications(certifications) {
-    return `
-      <h2 class="section-title">Certifications</h2>
-      <div class="section-content" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;">
-        ${certifications.map(cert => `
-          <div style="background:#191919;padding:1rem 2rem;border-radius:1rem;box-shadow:0 2px 12px #0003;">
-            <div style="font-size:1.1rem;color:#FFDAB9;font-weight:600;">${cert.title} <span style="float:right;color:#fff;font-size:1rem;font-weight:400;">${cert.year}</span></div>
-            <div style="color:#fff;font-weight:400;">${cert.issuer}</div>
-            <div style="color:#bbb;">${cert.description}</div>
-          </div>
-        `).join('')}
-      </div>
-    `;
-  }
-
-  function renderExperience(experience) {
-    return `
-      <h2 class="section-title">Experience</h2>
-      <div class="section-content">
+    function renderExperience(experience) {
+      return `
         ${experience.map(exp => `
           <div style="background:#191919;padding:1rem 2rem;margin:1rem auto;max-width:600px;border-radius:1rem;box-shadow:0 2px 12px #0003;">
             <div style="font-size:1.2rem;color:#FFDAB9;font-weight:600;">${exp.title} <span style="float:right;color:#fff;font-size:1rem;font-weight:400;">${exp.period}</span></div>
             <div style="color:#fff;font-weight:400;">${exp.company}</div>
             <ul style="color:#bbb;padding-left:1.2rem;">
-              ${exp.description.map(item => `<li style="margin-bottom:0.5rem">${item}</li>`).join('')}
+              ${exp.description.map(item => `<li style="margin-bottom:0.5rem">${item}</li>`).join("")}
             </ul>
           </div>
-        `).join('')}
-      </div>
-    `;
-  }
-
-  function renderProjects(projects) {
-    return `
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="section-content" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;">
-        ${projects.map(project => `
-          <div style="background:#191919;padding:1rem 2rem;border-radius:1rem;box-shadow:0 2px 12px #0003;">
-            <div style="font-size:1.1rem;color:#FFDAB9;font-weight:600;">${project.title} <span style="float:right;font-size:0.85em;color:#FFDAB9;">${project.status}</span></div>
-            <div style="color:#bbb;margin-bottom:0.5em;">${project.description}</div>
-            <div style="font-size:1rem;color:#FFDAB9;">${project.tech.join(', ')}</div>
-          </div>
-        `).join('')}
-      </div>
-    `;
-  }
-
-  // --- Inject into Page ---
-
-  // Replace the static contents
-  document.querySelector('.skills').innerHTML = renderSkills(skills);
-  document.querySelector('.education').innerHTML = renderEducation(education);
-  document.querySelector('.projects').innerHTML = renderProjects(projects);
-  document.querySelector('.experience').innerHTML = renderExperience(experience);
-
-  // Optionally, add certifications section after education
-  const eduSection = document.querySelector('.education');
-  eduSection.insertAdjacentHTML('afterend', `<section class="certifications skills, education, projects, experience, contact" style="background:#111; margin-top:2rem; border-radius:2rem; box-shadow:0 0 30px #1a1a1a;">${renderCertifications(certifications)}</section>`);
-</script>
-    <!-- 3D Robot Cursor Follower (Three.js placeholder) -->
-    <div id="robot-cursor"></div>
-    <script>
-    // --- 3D Robot Cursor Follower (replace sphere with robot model for extra cuteness) ---
-    const robotDiv = document.getElementById('robot-cursor');
-    robotDiv.style.position = 'fixed';
-    robotDiv.style.pointerEvents = 'none';
-    robotDiv.style.zIndex = '9999';
-    const width = 90, height = 90;
-    robotDiv.style.width = width+"px";
-    robotDiv.style.height = height+"px";
-    robotDiv.style.top = "0";
-    robotDiv.style.left = "0";
-
-    // Setup Three.js scene
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, width/height, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({alpha:true});
-    renderer.setSize(width, height);
-    robotDiv.appendChild(renderer.domElement);
-
-    // Cute robot = sphere with eyes (placeholder)
-    const bodyMaterial = new THREE.MeshStandardMaterial({ color: 0xFFDAB9 });
-    const body = new THREE.Mesh(new THREE.SphereGeometry(20, 32, 32), bodyMaterial);
-    scene.add(body);
-
-    // Eyes (two small spheres)
-    const eyeMaterial = new THREE.MeshStandardMaterial({color:0x111111});
-    const leftEye = new THREE.Mesh(new THREE.SphereGeometry(2.7, 16, 16), eyeMaterial);
-    leftEye.position.set(-7, 7, 18);
-    const rightEye = new THREE.Mesh(new THREE.SphereGeometry(2.7, 16, 16), eyeMaterial);
-    rightEye.position.set(7, 7, 18);
-    body.add(leftEye);
-    body.add(rightEye);
-
-    // Some light
-    const light = new THREE.PointLight(0xffffff, 1.5, 1000);
-    light.position.set(50, 50, 100);
-    scene.add(light);
-
-    camera.position.z = 60;
-
-    function animate() {
-        requestAnimationFrame(animate);
-        body.rotation.y += 0.01;
-        renderer.render(scene, camera);
+        `).join("")}
+      `;
     }
-    animate();
 
-    // Move robotDiv with the cursor (smooth)
-    let mouseX = 0, mouseY = 0, currentX = 0, currentY = 0;
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX - width/2;
-        mouseY = e.clientY - height/2;
-    });
-    // Smooth follow
-    function followCursor() {
-        currentX += (mouseX - currentX) * 0.18;
-        currentY += (mouseY - currentY) * 0.18;
-        robotDiv.style.left = `${currentX}px`;
-        robotDiv.style.top = `${currentY}px`;
-        requestAnimationFrame(followCursor);
-    }
-    followCursor();
-    </script>
+    // --- Inject into Sections ---
+    document.querySelector("#skills-projects").innerHTML = renderSkills(skills) + renderProjects(projects);
+    document.querySelector("#education-certifications").innerHTML = renderEducation(education) + renderCertifications(certifications);
+    document.querySelector("#experience .section-content").innerHTML = renderExperience(experience);
+  </script>
 </body>
 </html>
