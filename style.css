@@ -226,3 +226,52 @@ h2 {
     color: #FFDAB9;
     text-decoration: none;
 }
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #111; /* dark card */
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #FFDAB9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #FFDAB9;
+}
+
+.card p {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #ddd;
+}
+
+.card .highlight {
+  color: #b74b4b;
+  font-weight: bold;
+}
+
+.card .date {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
