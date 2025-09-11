@@ -299,12 +299,13 @@ span{
     }
 }
 
-/* --- Extra sections styling for scroll --- */
-.skills, .education, .projects, .experience, .contact {
+/* --- Sections Styling --- */
+.skills, .education, .projects, .experience, .contact, .certifications {
     background: #111;
     margin-top: 2rem;
     border-radius: 2rem;
     box-shadow: 0 0 30px #1a1a1a;
+    padding: 2rem;
 }
 .section-title {
     font-size: 3rem;
@@ -318,4 +319,59 @@ span{
     margin: 0 auto 2rem auto;
     max-width: 900px;
     text-align: center;
+}
+
+/* --- Cards & Skills Animations --- */
+.card {
+    background: #191919;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px #0003;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px #FFDAB966;
+}
+
+.skills-list span.btn {
+    display: inline-block;
+    background: #222;
+    color: #FFDAB9;
+    border-radius: 2rem;
+    margin: 5px;
+    font-size: 1.5rem;
+    border: 1px solid #FFDAB9;
+    padding: 0.5rem 1rem;
+    transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
+    cursor: default;
+}
+
+.skills-list span.btn:hover {
+    transform: scale(1.1);
+    background: #FFDAB9;
+    color: black;
+    box-shadow: 0 0 10px #FFDAB966;
+    cursor: pointer;
+}
+
+/* --- Project Tech Tags Hover --- */
+.card-tech span {
+    display: inline-block;
+    margin: 0.2rem 0.3rem 0.2rem 0;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.5rem;
+    background: #222;
+    border: 1px solid #FFDAB9;
+    color: #FFDAB9;
+    transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.card-tech span:hover {
+    transform: scale(1.1);
+    background: #FFDAB9;
+    color: black;
+    box-shadow: 0 0 8px #FFDAB966;
 }
