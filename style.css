@@ -34,6 +34,7 @@ header {
     font-size: 3rem;
     font-weight: 800;
     color: #FFDAB9;
+    text-decoration: none; /* removes underline */
 }
 
 nav a {
@@ -42,10 +43,26 @@ nav a {
     margin-left: 3rem;
     font-weight: 500;
     text-decoration: none;
+    position: relative;
 }
 
 nav a.active, nav a:hover {
     color: #FFDAB9;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #FFDAB9;
+    transition: 0.3s;
+}
+
+nav a:hover::after, nav a.active::after {
+    width: 100%;
 }
 
 /* Home Section */
@@ -55,6 +72,14 @@ nav a.active, nav a:hover {
     align-items: center;
     gap: 6rem;
     min-height: 100vh;
+}
+
+.home-content .social-icons {
+    margin-bottom: 2rem; /* space after icons before buttons */
+}
+
+.home-content .btn {
+    margin-right: 1.5rem; /* space between buttons */
 }
 
 .home-content h1 {
@@ -73,8 +98,9 @@ nav a.active, nav a:hover {
 }
 
 .home-content p {
-    font-size: 1.6rem;
-    max-width: 500px;
+    font-size: clamp(1.2rem, 1.6vw, 1.8rem); 
+    max-width: 700px;
+    margin-bottom: 3rem; 
 }
 
 /* Bouncing Image */
@@ -93,7 +119,7 @@ nav a.active, nav a:hover {
 /* Typing Text (pure CSS) */
 .typing-text .words::after {
     content: "Software Developer";
-    color: #b74b4b;
+    color:  #FFDAB9;
     animation: words 10s infinite;
 }
 
