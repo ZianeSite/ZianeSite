@@ -33,7 +33,7 @@ header {
 .logo {
     font-size: 3rem;
     font-weight: 800;
-    color: #b74b4b;
+    color: #FFDAB9;
 }
 
 nav a {
@@ -45,7 +45,7 @@ nav a {
 }
 
 nav a.active, nav a:hover {
-    color: #b74b4b;
+    color: #FFDAB9;
 }
 
 /* Home Section */
@@ -63,7 +63,7 @@ nav a.active, nav a:hover {
 }
 
 .home-content h1 span {
-    color: #b74b4b;
+    color: #FFDAB9;
 }
 
 .home-content h3 {
@@ -81,7 +81,7 @@ nav a.active, nav a:hover {
 .home-img img {
     width: 25vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px #b74b4b;
+    box-shadow: 0 0 25px #FFDAB9;
     animation: bounce 2s infinite ease-in-out;
 }
 
@@ -108,7 +108,7 @@ nav a.active, nav a:hover {
     right: -3px;
     width: 2px;
     height: 1.2em;
-    background-color: #b74b4b;
+    background-color: #FFDAB9;
     animation: blink 0.7s infinite;
 }
 
@@ -142,28 +142,28 @@ nav a.active, nav a:hover {
     align-items: center;
     width: 4rem;
     height: 4rem;
-    border: 2px solid #b74b4b;
+    border: 2px solid #FFDAB9;
     border-radius: 50%;
-    color: #b74b4b;
+    color: #FFDAB9;
     margin-right: 1rem;
     font-size: 2rem;
     transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-    background-color: #b74b4b;
+    background-color: #FFDAB9;
     color: black;
     transform: scale(1.3);
-    box-shadow: 0 0 20px #b74b4b;
+    box-shadow: 0 0 20px #FFDAB9;
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
     padding: 1rem 2.5rem;
-    border: 2px solid #b74b4b;
+    border: 2px solid #FFDAB9;
     border-radius: 4rem;
-    color: #b74b4b;
+    color: #FFDAB9;
     background-color: black;
     font-size: 1.6rem;
     cursor: pointer;
@@ -171,9 +171,9 @@ nav a.active, nav a:hover {
 }
 
 .btn:hover {
-    background-color: #b74b4b;
+    background-color: #FFDAB9;
     color: black;
-    box-shadow: 0 0 20px #b74b4b;
+    box-shadow: 0 0 20px #FFDAB9;
     transform: scale(1.05);
 }
 
@@ -186,7 +186,7 @@ section {
 h2 {
     font-size: 3rem;
     text-align: center;
-    color: #b74b4b;
+    color: #FFDAB9;
     margin-bottom: 3rem;
 }
 
@@ -197,6 +197,6 @@ h2 {
 }
 
 .section-content a {
-    color: #b74b4b;
+    color: #FFDAB9;
     text-decoration: none;
 }
