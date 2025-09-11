@@ -1,147 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-/* --- Base --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-}
-
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-body {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #0b0b0b;
-    color: #fff;
-    overflow-x: hidden;
-}
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+html { font-size:62.5%; scroll-behavior:smooth; }
+body { background:#0b0b0b; color:#fff; min-height:100vh; overflow-x:hidden; }
 
 /* --- Header --- */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.2rem 9%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0,0,0,0.7);
-    z-index: 100;
-    backdrop-filter: blur(10px);
-}
-
-.logo {
-    font-size: 3rem;
-    font-weight: 800;
-    color: #FFDAB9;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-nav a {
-    margin-left: 3rem;
-    font-size: 1.7rem;
-    font-weight: 500;
-    color: #fff;
-    border-bottom: 2px solid transparent;
-    transition: 0.3s ease;
-}
-
-nav a.active,
-nav a:hover {
-    color: #FFDAB9;
-    border-bottom: 2px solid #FFDAB9;
-}
+header { position:fixed; top:0; left:0; width:100%; display:flex; justify-content:space-between; align-items:center; padding:1.2rem 9%; background:rgba(0,0,0,0.7); backdrop-filter:blur(10px); z-index:100; }
+.logo { font-size:3rem; color:#FFDAB9; font-weight:800; cursor:pointer; transition:0.3s; }
+.logo:hover { transform:scale(1.1); }
+nav a { margin-left:3rem; font-size:1.7rem; color:#fff; font-weight:500; border-bottom:2px solid transparent; transition:0.3s; }
+nav a.active, nav a:hover { color:#FFDAB9; border-bottom:2px solid #FFDAB9; }
 
 /* --- Sections --- */
-section {
-    padding: 6rem 9%;
-    min-height: 100vh;
-}
+section { padding:6rem 9%; min-height:100vh; }
+.section-title { text-align:center; font-size:3rem; color:#FFDAB9; margin-bottom:2rem; }
+.sub-title { font-size:2rem; color:#FFDAB9; margin-bottom:1rem; }
+.section-content { display:flex; flex-wrap:wrap; gap:4rem; justify-content:center; }
 
 /* --- Home --- */
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
-    flex-wrap: wrap;
-}
+.home { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:6rem; }
+.home-img img { width:30vw; max-width:400px; border-radius:50%/60%; object-fit:cover; box-shadow:0 0 25px #b74b4b; transition:0.3s; }
+.home-img img:hover { transform:scale(1.05); }
+.home-content h1 { font-size:4rem; line-height:1.3; font-weight:700; }
+.home-content h1 span { color:#FFDAB9; }
+.home-content h3 { font-size:2.6rem; font-weight:600; margin:1rem 0; height:40px; }
+.home-content p { font-size:1.6rem; line-height:1.6; max-width:550px; margin-bottom:2rem; }
+.social-icons { margin-bottom:2rem; }
+.social-icons a { display:inline-flex; justify-content:center; align-items:center; width:4rem; height:4rem; margin-right:1.5rem; border-radius:50%; border:2px solid #FFDAB9; color:#FFDAB9; font-size:2rem; transition:0.3s; }
+.social-icons a:hover { background:#FFDAB9; color:black; transform:scale(1.3) translateY(-5px); box-shadow:0 0 20px #FFDAB9; }
+.btn { display:inline-block; margin-right:1rem; padding:1rem 2.5rem; font-size:1.6rem; color:#FFDAB9; border:2px solid #FFDAB9; border-radius:3rem; background:transparent; cursor:pointer; transition:0.3s; }
+.btn:hover { background:#FFDAB9; color:black; transform:scale(1.05); box-shadow:0 0 20px #FFDAB9; }
 
-.home-img img {
-    width: 30vw;
-    max-width: 400px;
-    border-radius: 50% / 60%;
-    object-fit: cover;
-    box-shadow: 0 0 25px #b74b4b;
-    transition: transform 0.3s ease;
-}
+/* --- Cards --- */
+.card { background:#111; padding:2rem; border-radius:2rem; box-shadow:0 0 20px #1a1a1a; width:280px; transition:0.3s; }
+.card:hover { transform:translateY(-5px) scale(1.02); box-shadow:0 0 25px #FFDAB9; }
+.card-title { font-weight:600; font-size:1.3rem; color:#FFDAB9; margin-bottom:0.5rem; }
+.card-sub { color:#fff; font-weight:400; margin-bottom:0.5rem; }
+.card-desc { color:#bbb; font-size:1.4rem; line-height:1.5; }
+.card-desc ul { padding-left:1.2rem; }
+.card-tech { margin-top:1rem; font-size:1.3rem; color:#FFDAB9; }
 
-.home-img img:hover {
-    transform: scale(1.05);
-}
+/* --- Skills List --- */
+.skills-list { display:flex; flex-wrap:wrap; gap:1rem; }
+.skills-list .btn { font-size:1.4rem; padding:0.8rem 1.5rem; }
 
-.home-content h1 {
-    font-size: 4rem;
-    line-height: 1.3;
-    font-weight: 700;
-}
+/* --- Contact --- */
+.contact-block p { font-size:1.5rem; margin:0.5rem 0; }
 
-.home-content h1 span {
-    color: #FFDAB9;
-}
+/* --- Flower Cursor --- */
+#cursor-flower { position:fixed; pointer-events:none; width:50px; height:50px; background:url('assets/flower.png') no-repeat center/contain; z-index:9999; transform:translate(-50%,-50%); }
 
-.home-content h3 {
-    font-size: 2.6rem;
-    font-weight: 600;
-    margin: 1rem 0;
+/* --- Responsive --- */
+@media (max-width:1000px) {
+  .home { flex-direction:column; gap:3rem; }
+  .home-img img { width:60vw; }
+  .section-content { flex-direction:column; gap:2rem; }
+  .card { width:90%; }
 }
-
-.home-content p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    max-width: 550px;
-    margin-bottom: 2rem;
-}
-
-.social-icons {
-    margin-bottom: 2rem;
-}
-
-.social-icons a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    margin-right: 1.5rem;
-    border-radius: 50%;
-    border: 2px solid #FFDAB9;
-    color: #FFDAB9;
-    font-size: 2rem;
-    transition: all 0.3s ease;
-}
-
-.social-icons a:hover {
-    background-color: #FFDAB9;
-    color: black;
-    transform: scale(1.3) translateY(-5px);
-    box-shadow: 0 0 20px #FFDAB9;
-}
-
-.btn {
-    display: inline-block;
-    margin-right: 1rem;
-    padding: 1rem 2.5rem;
-    font-size: 1.6rem;
