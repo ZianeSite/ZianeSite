@@ -6,9 +6,9 @@
   <title>Portfolio Website</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
     <a href="https://github.com/ZianeSite" class="logo">ZianeSite</a>
     <nav>
@@ -26,7 +26,7 @@
     </div>
     <div class="home-content">
       <h1>Hi, It's <span>Lebohang Precious Ziane</span></h1>
-      <h3 class="typing-text">I'm a <span></span></h3>
+      <h3 class="typing-text">I'm a <span id="typing"></span></h3>
       <p>
         With a Diploma in Information & Communication Technology – Application Development (2024) from Sol Plaatje University.  
         I am an Oracle Certified Associate (Java SE 8 Programmer, IZO-808) and hold certifications in IBM AI Fundamentals, Professional Skill, and Certiport IT Specialist.  
@@ -75,22 +75,22 @@
     </div>
   </section>
 
-  <!-- SCRIPT DATA + RENDERING -->
-  <script>
-    // --- Your Data ---
-    const skills = ["Java", "JavaScript", "HTML", "CSS", "Visual Basic", "Python", "SQL", "Git"];
+  <!-- Flower Cursor -->
+  <div id="cursor-flower"></div>
 
+  <!-- JS DATA + RENDERING -->
+  <script>
+    // ----------------- DATA -----------------
+    const skills = ["Java", "JavaScript", "HTML", "CSS", "Visual Basic", "Python", "SQL", "Git"];
     const education = [
       { Qualification: "Diploma in ICT in Application Development", institution: "Sol Plaatje University", year: "2021 - 2023", description: "Specialized in Software Development" },
-      { Qualification: "Matric", institution: "Mahareng Secondary School", year: "2014 - 2018", description: "Mathematics and Physical Sciences" },
+      { Qualification: "Matric", institution: "Mahareng Secondary School", year: "2014 - 2018", description: "Mathematics and Physical Sciences" }
     ];
-
     const certifications = [
       { title: "Java SE 8 Programmer", issuer: "Oracle", year: "2025", description: "1Z0-808 Certification" },
       { title: "Information Technology Specialist", issuer: "Certiport", year: "2025", description: "Professional Skills Certification" },
-      { title: "AI Fundamentals", issuer: "IBM", year: "2025", description: "Artificial Intelligence Professional Skills" },
+      { title: "AI Fundamentals", issuer: "IBM", year: "2025", description: "Artificial Intelligence Professional Skills" }
     ];
-
     const experience = [
       {
         title: "Software Development Trainee - Java Program",
@@ -100,146 +100,71 @@
           "Gained hands-on experience in Java programming (OOP, data structures, algorithms, exception handling)",
           "Developed and tested console and GUI-based applications using Java",
           "Collaborated in team projects, using Git/GitHub for version control",
-          "Practiced debugging, testing, and documentation to ensure code quality",
-        ],
-      },
+          "Practiced debugging, testing, and documentation to ensure code quality"
+        ]
+      }
     ];
-
     const projects = [
       { title: "Cosmic Task Manager", description: "A space-themed productivity app with stellar animations", tech: ["React", "TypeScript", "Framer Motion"], status: "Live" },
       { title: "Neural Network Visualizer", description: "Interactive tool for understanding AI architectures", tech: ["Python", "TensorFlow", "D3.js"], status: "In Progress" },
-      { title: "Quantum Code Editor", description: "Next-gen code editor with AI-powered suggestions", tech: ["Electron", "Monaco", "OpenAI API"], status: "Planning" },
+      { title: "Quantum Code Editor", description: "Next-gen code editor with AI-powered suggestions", tech: ["Electron", "Monaco", "OpenAI API"], status: "Planning" }
     ];
 
-    // --- Helper Functions ---
+    // ----------------- RENDER -----------------
     function renderSkills(skills) {
-      return `
-        <h3 class="sub-title">Skills</h3>
-        <div class="skills-list">
-          ${skills.map(skill => `<span class="btn">${skill}</span>`).join('')}
-        </div>
-      `;
+      return `<h3 class="sub-title">Skills</h3><div class="skills-list">${skills.map(s => `<span class="btn">${s}</span>`).join('')}</div>`;
     }
-
     function renderEducation(education) {
-      return `
-        <h3 class="sub-title">Education</h3>
-        ${education.map(edu => `
-          <div class="card">
-            <div class="card-title">${edu.Qualification} <span class="year">${edu.year}</span></div>
-            <div class="card-sub">${edu.institution}</div>
-            <div class="card-desc">${edu.description}</div>
-          </div>
-        `).join('')}
-      `;
+      return `<h3 class="sub-title">Education</h3>${education.map(e => `<div class="card"><div class="card-title">${e.Qualification} <span class="year">${e.year}</span></div><div class="card-sub">${e.institution}</div><div class="card-desc">${e.description}</div></div>`).join('')}`;
     }
-
     function renderCertifications(certifications) {
-      return `
-        <h3 class="sub-title">Certifications</h3>
-        ${certifications.map(cert => `
-          <div class="card">
-            <div class="card-title">${cert.title} <span class="year">${cert.year}</span></div>
-            <div class="card-sub">${cert.issuer}</div>
-            <div class="card-desc">${cert.description}</div>
-          </div>
-        `).join('')}
-      `;
+      return `<h3 class="sub-title">Certifications</h3>${certifications.map(c => `<div class="card"><div class="card-title">${c.title} <span class="year">${c.year}</span></div><div class="card-sub">${c.issuer}</div><div class="card-desc">${c.description}</div></div>`).join('')}`;
     }
-
     function renderExperience(experience) {
-      return `
-        <h3 class="sub-title">Experience</h3>
-        ${experience.map(exp => `
-          <div class="card">
-            <div class="card-title">${exp.title} <span class="year">${exp.period}</span></div>
-            <div class="card-sub">${exp.company}</div>
-            <ul class="card-desc">
-              ${exp.description.map(item => `<li>${item}</li>`).join('')}
-            </ul>
-          </div>
-        `).join('')}
-      `;
+      return `<h3 class="sub-title">Experience</h3>${experience.map(e => `<div class="card"><div class="card-title">${e.title} <span class="year">${e.period}</span></div><div class="card-sub">${e.company}</div><ul class="card-desc">${e.description.map(d => `<li>${d}</li>`).join('')}</ul></div>`).join('')}`;
     }
-
     function renderProjects(projects) {
-      return `
-        <h3 class="sub-title">Featured Projects</h3>
-        ${projects.map(project => `
-          <div class="card">
-            <div class="card-title">${project.title} <span class="status">${project.status}</span></div>
-            <div class="card-desc">${project.description}</div>
-            <div class="card-tech">${project.tech.join(', ')}</div>
-          </div>
-        `).join('')}
-      `;
+      return `<h3 class="sub-title">Featured Projects</h3>${projects.map(p => `<div class="card"><div class="card-title">${p.title} <span class="status">${p.status}</span></div><div class="card-desc">${p.description}</div><div class="card-tech">${p.tech.join(', ')}</div></div>`).join('')}`;
     }
-
-    // --- Inject into Page ---
     document.querySelector('.skills-block').innerHTML = renderSkills(skills);
     document.querySelector('.projects-block').innerHTML = renderProjects(projects);
     document.querySelector('.education-block').innerHTML = renderEducation(education);
     document.querySelector('.certifications-block').innerHTML = renderCertifications(certifications);
     document.querySelector('.experience-block').innerHTML = renderExperience(experience);
-  </script>
 
-  <!-- Robot Cursor -->
-  <div id="robot-cursor"></div>
-  <script>
-    const robotDiv = document.getElementById('robot-cursor');
-    robotDiv.style.position = 'fixed';
-    robotDiv.style.pointerEvents = 'none';
-    robotDiv.style.zIndex = '9999';
-    const width = 90, height = 90;
-    robotDiv.style.width = width+"px";
-    robotDiv.style.height = height+"px";
-    robotDiv.style.top = "0";
-    robotDiv.style.left = "0";
+    // ----------------- Flower Cursor -----------------
+    const flower = document.getElementById('cursor-flower');
+    let fx=0, fy=0, mx=0, my=0;
+    document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; });
+    function animateFlower() { fx+=(mx-fx)*0.15; fy+=(my-fy)*0.15; flower.style.left=fx+'px'; flower.style.top=fy+'px'; requestAnimationFrame(animateFlower); }
+    animateFlower();
 
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, width/height, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({alpha:true});
-    renderer.setSize(width, height);
-    robotDiv.appendChild(renderer.domElement);
-
-    const bodyMaterial = new THREE.MeshStandardMaterial({ color: 0xFFDAB9 });
-    const body = new THREE.Mesh(new THREE.SphereGeometry(20, 32, 32), bodyMaterial);
-    scene.add(body);
-
-    const eyeMaterial = new THREE.MeshStandardMaterial({color:0x111111});
-    const leftEye = new THREE.Mesh(new THREE.SphereGeometry(2.7, 16, 16), eyeMaterial);
-    leftEye.position.set(-7, 7, 18);
-    const rightEye = new THREE.Mesh(new THREE.SphereGeometry(2.7, 16, 16), eyeMaterial);
-    rightEye.position.set(7, 7, 18);
-    body.add(leftEye);
-    body.add(rightEye);
-
-    const light = new THREE.PointLight(0xffffff, 1.5, 1000);
-    light.position.set(50, 50, 100);
-    scene.add(light);
-
-    camera.position.z = 60;
-
-    function animate() {
-      requestAnimationFrame(animate);
-      body.rotation.y += 0.01;
-      renderer.render(scene, camera);
-    }
-    animate();
-
-    let mouseX = 0, mouseY = 0, currentX = 0, currentY = 0;
-    document.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX - width/2;
-      mouseY = e.clientY - height/2;
+    // ----------------- Navbar Highlight -----------------
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => { if(scrollY >= section.offsetTop-100) current=section.getAttribute('id'); });
+      navLinks.forEach(link => { link.classList.remove('active'); if(link.getAttribute('href').includes(current)) link.classList.add('active'); });
     });
-    function followCursor() {
-      currentX += (mouseX - currentX) * 0.18;
-      currentY += (mouseY - currentY) * 0.18;
-      robotDiv.style.left = `${currentX}px`;
-      robotDiv.style.top = `${currentY}px`;
-      requestAnimationFrame(followCursor);
+
+    // ----------------- Typing Animation -----------------
+    const words = ["Software Developer","Web Designer","UI/UX Enthusiast","Java Programmer","Problem Solver"];
+    const typingEl = document.getElementById("typing");
+    let wordIndex=0, charIndex=0;
+    let isDeleting=false;
+    function type() {
+      let currentWord = words[wordIndex];
+      if(isDeleting) {
+        typingEl.textContent = currentWord.substring(0,charIndex--);
+      } else {
+        typingEl.textContent = currentWord.substring(0,charIndex++);
+      }
+      if(!isDeleting && charIndex===currentWord.length){ isDeleting=true; setTimeout(type,1000); return; }
+      if(isDeleting && charIndex===0){ isDeleting=false; wordIndex=(wordIndex+1)%words.length; }
+      setTimeout(type,isDeleting?80:150);
     }
-    followCursor();
+    type();
   </script>
 </body>
 </html>
