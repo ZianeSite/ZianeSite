@@ -66,9 +66,11 @@ _01 June 2022_
 
 
 ## 📈 GitHub Stats
-
-![Ziane's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZianeSite&show_icons=true&theme=radical)
-![Streak](https://github-readme-streak-stats.herokuapp.com/?user=ZianeSite&theme=radical)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ZianeSite&show_icons=true&theme=radical" alt="GitHub Stats" height="150"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ZianeSite&theme=radical" alt="GitHub Streak" height="150"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ZianeSite&theme=radical" height="150"/>
+</p>
 
 ---
 
