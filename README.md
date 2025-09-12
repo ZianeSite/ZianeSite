@@ -61,14 +61,13 @@ _01 June 2022_
 
 - [Email](mailto:lebohangziane@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/lebohang-ziane-3805332b1/) <!-- Add your LinkedIn URL -->
-- [Portfolio] <!-- Add your portfolio/personal website URL -->
+- [Portfolio](zianesite.github.io/ZianeSite/)
 
 
 
 ## 📈 GitHub Stats
 
 ![Ziane's GitHub stats](https://github-readme-stats.vercel.app/api?username=ZianeSite&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ZianeSite&layout=compact&theme=radical)
 ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=ZianeSite&theme=radical)
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ZianeSite&theme=radical"/>
 
