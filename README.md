@@ -61,7 +61,7 @@ _01 June 2022_
 
 - [Email](mailto:lebohangziane@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/lebohang-ziane-3805332b1/) <!-- Add your LinkedIn URL -->
-- [Portfolio](zianesite.github.io/ZianeSite/)
+- [Portfolio](https://www.zianesite.github.io/ZianeSite/)
 
 
 
