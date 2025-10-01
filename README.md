@@ -1,15 +1,16 @@
 
 
 
-<h1 align="center">Hi, I'm Lebohang Precious Ziane👋</h1>
+<h1 align="center">Hi, I'm Lebohang Precious Ziane</h1>
 <h3 align="center">Information and Communication Technology Graduate | Application Developer</h3>
 
 
 - 🔭 I’m currently working on a project (details coming soon!)
-- 💡 My main interests are in front-end development — I enjoy designing user interfaces and graphical layouts.
+- 💡 My main interests are in front-end development — I enjoy designing user interfaces and graphical layouts.  
 - 🛠️ I also have strong skills in back-end development with Java.
-- 📊 Experienced in Data Analysis, Visualization, Software Engineering, Big Data, and Communication Networks.
+- 📊 Experienced in Data Analysis, Visualization, Software Engineering, Big Data, Web & Mobile Applications, Building user-focused and efficient solutions and Communication Networks.
 ---
+
 ### 🎓 Education & Certifications
 
 - **Sol Platjee University** (2021 – 2023)  
@@ -23,19 +24,35 @@
 
 - **IBM** (2025)  
   Artificial Intelligence Fundamentals
-  Professional Skills
+  and Professional Skills
 
 ---
 
 
 ## 🛠️ Skills & Tools
 
-- Java
-- HTML & CSS
-- Python
-- JavaScript
-- NetBeans
-- Visual Basic
+### Languages
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+
+### Tools & IDEs
+![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VSCode-%23007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
+
+### Databases
+![MySQL](https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+
+### Data Visualization
+![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+
+---
 
 ---
 
