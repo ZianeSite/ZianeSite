@@ -1,33 +1,38 @@
-
-
-
 <h1 align="center">Hi, I'm Lebohang Precious Ziane</h1>
-<h3 align="center">Information and Communication Technology Graduate | Application Developer</h3>
+<h3 align="center">ICT Graduate | Java Developer | Software Engineer (Open to Remote Opportunities)</h3>
 
-
-- 🔭 I’m currently working on a project (details coming soon!)
-- 💡 My main interests are in front-end development — I enjoy designing user interfaces and graphical layouts.  
-- 🛠️ I also have strong skills in back-end development with Java.
-- 📊 Experienced in Data Analysis, Visualization, Software Engineering, Big Data, Web & Mobile Applications, Building user-focused and efficient solutions and Communication Networks.
 ---
 
-### 🎓 Education & Certifications
+## 👩🏽‍💻 About Me
+I am a passionate ICT graduate specializing in application development, with hands-on experience in **Java (OOP, GUI, data structures)**, front-end design, and data analysis.  
+I enjoy building impactful digital solutions, contributing to open-source, and continuously learning modern technologies.
 
-- **Sol Platjee University** (2021 – 2023)  
+---
+
+## 🚀 Featured Projects
+- [University Qualification Finder](#) – A system where learners enter grades to see which universities and programs they qualify for.  
+- [Data Visualization Dashboard](#) – Interactive reports and charts built using Python/Java + visualization tools.  
+- [Portfolio Website](https://zianesite.github.io/ZianeSite/) – My personal portfolio site built with React and Tailwind.  
+
+
+
+---
+
+## 🎓 Education & Certifications
+
+- 🎓 **Sol Plaatje University** (2021 – 2023)  
   Diploma in Information and Communication Technology in Application Development
 
-- **Oracle** (2025)  
-  1Z0-808 – Java SE 8 Programmer
+- 🏅 **Oracle** (2025)  
+  Java SE 8 Programmer (1Z0-808)
 
-- **Certiport** (2025)  
+- 📜 **Certiport** (2025)  
   Information Technology Specialist
 
-- **IBM** (2025)  
-  Artificial Intelligence Fundamentals
-  and Professional Skills
+- 🤖 **IBM** (2025)  
+  Artificial Intelligence Fundamentals & Professional Skills
 
 ---
-
 
 ## 🛠️ Skills & Tools
 
@@ -54,38 +59,38 @@
 
 ---
 
----
-
-### 🛠️ Experience
+## 🛠️ Experience
 
 **Software Development Trainee – Java Program**  
-_Afrika Tikkun | May 2025 – Present_
-- Gained hands-on experience in Java programming (OOP, data structures, algorithms, exception handling)
-- Developed and tested console and GUI-based applications using Java
-- Practiced debugging, testing, and documentation to ensure code quality
----
-
-### 🌟 Leadership & Extracurricular
-
-**ITWeb hackathon 2022 “Rise of the Hackathons**  
-_01 June 2022_
-- Our team, “Agent Hackers” became the overall winning team for the ITWeb hackathon event themed “Rise of the Hackathons”.
-- We focused on creating digital signatures to protect sensitive data in the SMSs sent by the Department of Health to citizens who got vaccinated.
-- It also won internship opportunities with Snode Technologies.
+_Afrika Tikkun | May 2025 – Present_  
+- Gained hands-on experience in Java programming (OOP, data structures, algorithms, exception handling)  
+- Developed and tested console and GUI-based applications using Java  
+- Practiced debugging, testing, and documentation to ensure code quality  
 
 ---
+
+## 🌟 Leadership & Extracurricular
+
+**ITWeb Hackathon 2022 – “Rise of the Hackathons”**  
+_01 June 2022_  
+- Our team, “Agent Hackers” became the **overall winning team**.  
+- Project: created **digital signatures** to protect sensitive Department of Health SMS data for vaccinated citizens.  
+- Won internship opportunities with Snode Technologies.  
+
+---
+
 ## 📫 Contact Me
+- 📧 [Email](mailto:lebohangziane@gmail.com)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/lebohang-ziane-3805332b1/)  
+- 🌍 [Portfolio](https://zianesite.github.io/ZianeSite/)  
 
-- [Email](mailto:lebohangziane@gmail.com)
-- [LinkedIn](https://www.linkedin.com/in/lebohang-ziane-3805332b1/) <!-- Add your LinkedIn URL -->
-- [Portfolio](https://zianesite.github.io/ZianeSite/)
-
-
+---
 
 ## 📈 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ZianeSite&show_icons=true&theme=radical" alt="GitHub Stats" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=ZianeSite&show_icons=true&theme=radical" height="150"/>
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ZianeSite&theme=radical" height="150"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ZianeSite&theme=radical" height="150"/>
 </p>
 
 ---
