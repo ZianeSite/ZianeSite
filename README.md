@@ -12,7 +12,7 @@ I enjoy building impactful digital solutions, contributing to open-source, and c
 ## 🚀 Featured Projects
 - [University Qualification Finder](#) – A system where learners enter grades to see which universities and programs they qualify for.  
 - [Data Visualization Dashboard](#) – Interactive reports and charts built using Python/Java + visualization tools.  
-- [Portfolio Website](https://zianesite.github.io/ZianeSite/) – My personal portfolio site built with React and Tailwind.  
+- [Portfolio Website](https://zianesite-portfolio.vercel.app/) – My personal portfolio site built with Next.js, React, Tailwind CSS, and Typescript.  
 
 
 
