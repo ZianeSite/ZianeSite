@@ -83,7 +83,7 @@ _01 June 2022_
 ## 📫 Contact Me
 - 📧 [Email](mailto:lebohangziane@gmail.com)  
 - 💼 [LinkedIn](https://www.linkedin.com/in/lebohang-ziane-3805332b1/)  
-- 🌍 [Portfolio](https://zianesite.github.io/ZianeSite/)  
+- 🌍 [Portfolio](https://zianesite-portfolio.vercel.app/)  
 
 ---
 
